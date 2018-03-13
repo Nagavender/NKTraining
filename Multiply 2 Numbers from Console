@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Please enter a number: ");
+            string input = Console.ReadLine(); 
+            int value = int.Parse(input); 
+            Console.Write("Please enter a number to multiply with Previous number: ");
+            String input2 = Console.ReadLine();
+            int Value2 = int.Parse(input2);
+            int result = value * Value2; 
+            Console.WriteLine("Total value when you multiply both numbers:"+ result); 
+            Console.ReadLine();
+        }
+    }
+}
