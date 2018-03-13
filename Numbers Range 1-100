@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter a number");
+            String input = Console.ReadLine(); //Accpeting input from console
+            int Value = int.Parse(input); //parsing String in to Integer
+            //int x = Value;
+            if (Value >= 1 && Value <= 100) //checking if the value in range
+            {
+                Console.WriteLine("Congrats! your number is in expected range"); // Printing Message on console if the number in Range
+         
+            }
+            else
+            {
+                Console.WriteLine("Sorry Your number is not in range"); // Printing error message if the number is not in Range
+
+            }
+            Console.ReadLine();
+        }
+    }
+}
