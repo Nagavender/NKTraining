@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Add_Multiply_Divide_Sub_2_numbers
+{
+    class Program
+    {
+        //Write a C# Sharp program to print on screen the output of adding, subtracting, multiplying and dividing of two numbers which will be entered by the user.
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please enter First Number");
+            String input = Console.ReadLine();
+            int X = int.Parse(input);
+            Console.WriteLine("Pleae enter second Number");
+            String input2 = Console.ReadLine();
+            int Y = int.Parse(input2);
+            //int resultforMultiply = X * Y;
+            //int resultforAdd = X + Y;
+            //int resultforSubstraction = X - Y;
+            //int resultforDivision = X / Y;
+            Console.WriteLine("{0} * {1} = {2}" , X, Y, X * Y); //inserting the first & Second parameter in to String to perform multiply operation
+            Console.WriteLine("{0} + {1} = {2}" , X, Y, X + Y); //inserting the first & Second parameter in to String to perform Add operation
+            Console.WriteLine("{0} - {1} = {2}" , X, Y, X - Y); //inserting the first & Second parameter in to String to perform Substract operation
+            Console.WriteLine("{0} / {1} = {2}" , X, Y, X / Y); //inserting the first & Second parameter in to String to perform Division
+            Console.ReadLine();
+        }
+    }
+}
