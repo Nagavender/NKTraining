@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+
+namespace ConsoleApp1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Write the numbers 0-99 to the screen and for each one say whether it is even
+            // Expected output:
+            // 1: odd
+            // 2: even
+            // 3: odd, etc
+
+            int[] a = new int[100];
+            for (int i = 0; i < a.Length; i++)
+            {
+                Console.Write(i);
+
+                bool isEven = i % 2 == 0;
+                if (isEven)
+                {
+                    Console.WriteLine(": even");
+                }
+                else
+                {
+                    Console.WriteLine(": odd");
+                }
+            }
+            Console.ReadLine();
+        }
+    }
+}
