@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConvertCelciustoFareneheit
+{
+    class Program
+    {
+        //C# programme to convert Clecius in to Kelin and Farenheit. 
+        static void Main(string[] args)
+        {
+            double TemperatureInCelsius, Kelvin, Farenheit;
+            Console.WriteLine("Please enter temperature in celcius : ");
+            String celsius = Console.ReadLine();
+
+            //double TemperatureInCelsius = double.Parse(celsius);
+            //double Kelvin = TemperatureInCelsius + 273.15;
+            //double Farenheit = TemperatureInCelsius * 1.8 + 32;
+
+            TemperatureInCelsius = double.Parse(celsius);
+            Kelvin = TemperatureInCelsius + 273.15;
+            Farenheit = TemperatureInCelsius * 1.8 + 32;
+            Console.WriteLine("Temperature in Kelvin is = {0}", Kelvin);
+            Console.WriteLine("Temperature in Fatenheit is = {0}", Farenheit);
+            Console.ReadLine();
+        }
+        
+     }
+}
