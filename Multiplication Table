@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Multiplication_table
+{
+    class Program
+    {
+        //Multiplication table for a user entered number from Console : First 20 (Lenght passed)
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Please Enter a number to see its multiplication table :");
+            String input = Console.ReadLine();
+            int value = int.Parse(input);
+            int[] a = new int[20];
+            for (int i = 0; i<=a.Length; i++) // for loop to increment number from 1 to 20
+            {
+                Console.WriteLine("{0} * {1} = {2}", value, i, value * i);
+            }
+            Console.ReadLine();
+        }
+    }
+}
