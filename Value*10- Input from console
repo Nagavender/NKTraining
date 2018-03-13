@@ -1,0 +1,19 @@
+using System;
+
+namespace ConsoleApp2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Problem: ask the user for a number between 1 and 100. Multiply the number by 10 and print it to the screen.
+            Console.Write("Please enter a number: ");
+            string input = Console.ReadLine(); // creating a variable string and reading it from console
+            int value = int.Parse(input); //parsing string in to Integer by declaring another variable "value"
+            int result = value * 10; // multiplying value * 10 and assigning it to variable "Result"
+            Console.WriteLine(result); // writing the Result to console
+            Console.ReadLine();
+
+        }
+    }
+}
